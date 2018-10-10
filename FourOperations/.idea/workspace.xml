@@ -4,11 +4,15 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/Fraction.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bcfa710-bc27-4254-8038-91659d248de9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9bcfa710-bc27-4254-8038-91659d248de9" name="Default" comment="完善了">
+      <change afterPath="$PROJECT_DIR$/src/main/ExecutionEengine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/FourOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/FourOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FourOperations/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FourOperations/FourOperation$Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FourOperations/FourOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FourOperations/Fraction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/FractionOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/FourOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SimpleFourOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Fraction.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,33 +40,37 @@
     <session id="2033541059">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4229" />
+          <entry key="java" value="6531" />
+          <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4229" />
+          <entry key="JAVA" value="6531" />
+          <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="24" />
+          <entry key="class" value="3" />
+          <entry key="java" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="24" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="27" />
         </counts>
       </usages-collector>
     </session>
@@ -72,11 +80,13 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/FourOperation.java">
+            <entry file="file://$PROJECT_DIR$/src/main/SimpleFourOperation.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1211">
-                  <caret line="207" selection-start-line="207" selection-end-line="207" />
+                <state relative-caret-position="386">
+                  <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
                   <folding>
+                    <element signature="method#init#0;class#FourOperation#0" />
+                    <element signature="method#test#0;class#FourOperation#0" />
                     <element signature="method#generateFormula#0;class#FourOperation#0" />
                     <element signature="method#generateCorrectAnswer#0;class#FourOperation#0" />
                     <element signature="method#operations#0;class#FourOperation#0" />
@@ -87,7 +97,25 @@
                     <element signature="method#testOperators#0;class#FourOperation#0" />
                     <element signature="method#storeOpInList#0;class#FourOperation#0" />
                     <element signature="method#generateOperator#0;class#FourOperation#0" />
-                    <element signature="method#main#0;class#FourOperation#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/FractionOperation.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="503">
+                  <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#printFractionExpression#0;class#FractionOperation#0" />
+                    <element signature="method#generateCorrectAnswer#0;class#FractionOperation#0" />
+                    <element signature="method#fractionMultiple#0;class#FractionOperation#0" />
+                    <element signature="method#fractionDivide#0;class#FractionOperation#0" />
+                    <element signature="method#fractionAdd#0;class#FractionOperation#0" />
+                    <element signature="method#fractionSubtract#0;class#FractionOperation#0" />
+                    <element signature="method#getGcdAndsimplificationFraction#0;class#FractionOperation#0" />
                   </folding>
                 </state>
               </provider>
@@ -98,29 +126,13 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/Calculator.java">
+            <entry file="file://$PROJECT_DIR$/src/main/ExecutionEengine.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="271">
-                  <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+                <state relative-caret-position="540">
+                  <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="method#fractionMultiple#0;class#Calculator#0" />
-                    <element signature="method#fractionDivide#0;class#Calculator#0" />
-                    <element signature="method#fractionAdd#0;class#Calculator#0" />
-                    <element signature="method#fractionSubtract#0;class#Calculator#0" />
-                    <element signature="method#regenerate#0;class#Calculator#0" />
-                    <element signature="method#generateNum#0;class#Calculator#0" />
-                    <element signature="method#greatestCommonDivisor#0;class#Calculator#0" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/Fraction.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="40">
-                  <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -151,8 +163,11 @@
         <option value="$PROJECT_DIR$/src/Calculator.java" />
         <option value="$PROJECT_DIR$/src/FourOperation.java" />
         <option value="$PROJECT_DIR$/src/main/Fraction.java" />
-        <option value="$PROJECT_DIR$/src/main/FourOperation.java" />
         <option value="$PROJECT_DIR$/src/main/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/main/FourOperation.java" />
+        <option value="$PROJECT_DIR$/src/main/FractionOperation.java" />
+        <option value="$PROJECT_DIR$/src/main/ExecutionEengine.java" />
+        <option value="$PROJECT_DIR$/src/main/SimpleFourOperation.java" />
       </list>
     </option>
   </component>
@@ -163,8 +178,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="275" />
-    <option name="y" value="127" />
+    <option name="x" value="168" />
+    <option name="y" value="59" />
     <option name="width" value="1380" />
     <option name="height" value="847" />
   </component>
@@ -173,32 +188,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FourOperations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FourOperations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FourOperations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FourOperations" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FourOperations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FourOperations" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -206,7 +196,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539064768760" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539137873284" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -221,11 +211,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Calculator.Test">
-    <configuration name="Calculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.ExecutionEengine">
+    <configuration name="ExecutionEengine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.ExecutionEengine" />
       <module name="FourOperations" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -250,11 +245,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Calculator.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Calculator.engine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FourOperations" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Calculator" />
-      <option name="METHOD_NAME" value="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.Calculator" />
+      <option name="METHOD_NAME" value="engine" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -272,18 +273,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Calculator.Test" />
-      <item itemvalue="JUnit.Calculator" />
-      <item itemvalue="JUnit.Calculator.test" />
       <item itemvalue="JUnit.Calculator.abbb" />
       <item itemvalue="JUnit.Calculator.test1" />
+      <item itemvalue="JUnit.Calculator.engine" />
+      <item itemvalue="Application.ExecutionEengine" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExecutionEengine" />
+        <item itemvalue="JUnit.Calculator.engine" />
         <item itemvalue="JUnit.Calculator.Test" />
         <item itemvalue="JUnit.Calculator.test1" />
         <item itemvalue="JUnit.Calculator.abbb" />
-        <item itemvalue="JUnit.Calculator.test" />
-        <item itemvalue="JUnit.Calculator" />
       </list>
     </recent_temporary>
   </component>
@@ -306,65 +307,68 @@
       <workItem from="1538958036225" duration="606000" />
       <workItem from="1539003127038" duration="27000" />
       <workItem from="1539003275340" duration="1271000" />
-      <workItem from="1539052237442" duration="2014000" />
+      <workItem from="1539052237442" duration="2670000" />
+      <workItem from="1539097755656" duration="6997000" />
+      <workItem from="1539133352675" duration="4528000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Calculator_test - 2018.10.07 at 21h 40m 32s.xml">
-      <configuration name="Calculator.test" configurationId="JUnit" />
+    <history-entry file="Calculator_engine - 2018.10.10 at 00h 55m 02s.xml">
+      <configuration name="Calculator.engine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Calculator_test - 2018.10.07 at 21h 50m 45s.xml">
-      <configuration name="Calculator.test" configurationId="JUnit" />
+    <history-entry file="Calculator_engine - 2018.10.10 at 00h 55m 47s.xml">
+      <configuration name="Calculator.engine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Calculator_test - 2018.10.07 at 21h 50m 58s.xml">
-      <configuration name="Calculator.test" configurationId="JUnit" />
+    <history-entry file="Calculator_engine - 2018.10.10 at 00h 59m 17s.xml">
+      <configuration name="Calculator.engine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Calculator_test - 2018.10.07 at 21h 51m 07s.xml">
-      <configuration name="Calculator.test" configurationId="JUnit" />
+    <history-entry file="Calculator_engine - 2018.10.10 at 00h 59m 51s.xml">
+      <configuration name="Calculator.engine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Calculator_abbb - 2018.10.07 at 22h 12m 33s.xml">
-      <configuration name="Calculator.abbb" configurationId="JUnit" />
+    <history-entry file="Calculator_engine - 2018.10.10 at 01h 00m 14s.xml">
+      <configuration name="Calculator.engine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Calculator_abbb - 2018.10.07 at 22h 13m 03s.xml">
-      <configuration name="Calculator.abbb" configurationId="JUnit" />
+    <history-entry file="Calculator_engine - 2018.10.10 at 01h 01m 44s.xml">
+      <configuration name="Calculator.engine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Calculator_abbb - 2018.10.07 at 22h 15m 11s.xml">
-      <configuration name="Calculator.abbb" configurationId="JUnit" />
+    <history-entry file="Calculator_engine - 2018.10.10 at 09h 18m 47s.xml">
+      <configuration name="Calculator.engine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Calculator_abbb - 2018.10.07 at 22h 15m 48s.xml">
-      <configuration name="Calculator.abbb" configurationId="JUnit" />
+    <history-entry file="Calculator_engine - 2018.10.10 at 09h 19m 04s.xml">
+      <configuration name="Calculator.engine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Calculator_test1 - 2018.10.07 at 23h 36m 45s.xml">
-      <configuration name="Calculator.test1" configurationId="JUnit" />
+    <history-entry file="Calculator_engine - 2018.10.10 at 09h 20m 07s.xml">
+      <configuration name="Calculator.engine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Calculator_Test - 2018.10.07 at 23h 55m 24s.xml">
-      <configuration name="Calculator.Test" configurationId="JUnit" />
+    <history-entry file="Calculator_engine - 2018.10.10 at 09h 20m 19s.xml">
+      <configuration name="Calculator.engine" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51438000" />
+    <option name="totallyTimeSpent" value="63619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.13486141" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.1359275" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32681867" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49946696" weight="0.37939698" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49946696" weight="0.37893593" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.318872" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.46203905" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.320304" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.43865365" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -378,12 +382,56 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.1359275" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32681867" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49946696" weight="0.37893593" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.320304" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.43865365" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3296355" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>newAnswer</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
@@ -445,33 +493,42 @@
     <entry file="file://$PROJECT_DIR$/src/Fraction.java" />
     <entry file="file://$PROJECT_DIR$/src/main/Fraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="80">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Calculator.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+        <state relative-caret-position="3180">
+          <caret line="237" selection-start-line="237" selection-end-line="237" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/FractionOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#fractionMultiple#0;class#Calculator#0" />
-            <element signature="method#fractionDivide#0;class#Calculator#0" />
-            <element signature="method#fractionAdd#0;class#Calculator#0" />
-            <element signature="method#fractionSubtract#0;class#Calculator#0" />
-            <element signature="method#regenerate#0;class#Calculator#0" />
-            <element signature="method#generateNum#0;class#Calculator#0" />
-            <element signature="method#greatestCommonDivisor#0;class#Calculator#0" />
+            <element signature="method#printFractionExpression#0;class#FractionOperation#0" />
+            <element signature="method#generateCorrectAnswer#0;class#FractionOperation#0" />
+            <element signature="method#fractionMultiple#0;class#FractionOperation#0" />
+            <element signature="method#fractionDivide#0;class#FractionOperation#0" />
+            <element signature="method#fractionAdd#0;class#FractionOperation#0" />
+            <element signature="method#fractionSubtract#0;class#FractionOperation#0" />
+            <element signature="method#getGcdAndsimplificationFraction#0;class#FractionOperation#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/FourOperation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/SimpleFourOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1211">
-          <caret line="207" selection-start-line="207" selection-end-line="207" />
+        <state relative-caret-position="386">
+          <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
           <folding>
+            <element signature="method#init#0;class#FourOperation#0" />
+            <element signature="method#test#0;class#FourOperation#0" />
             <element signature="method#generateFormula#0;class#FourOperation#0" />
             <element signature="method#generateCorrectAnswer#0;class#FourOperation#0" />
             <element signature="method#operations#0;class#FourOperation#0" />
@@ -482,7 +539,16 @@
             <element signature="method#testOperators#0;class#FourOperation#0" />
             <element signature="method#storeOpInList#0;class#FourOperation#0" />
             <element signature="method#generateOperator#0;class#FourOperation#0" />
-            <element signature="method#main#0;class#FourOperation#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ExecutionEengine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

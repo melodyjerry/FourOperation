@@ -1,6 +1,9 @@
 package main;
 
-public class Fraction {
+import java.io.Serializable;
+
+public class Fraction implements Serializable {
+    private static final long serialVersionUID = -3245478690496182643L;
     private int numerator;  //分子
     private int denominator;  //分母
 

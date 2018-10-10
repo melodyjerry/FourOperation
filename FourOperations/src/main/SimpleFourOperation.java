@@ -9,11 +9,11 @@ import java.util.*;
 /**
  *
  */
-public class FourOperation {
-    public static List<String> operatorsList;
-    private static List<String> operatorExpressionList;
-    private static List<String> userAnswerList;
-    private static List<String> correctAnswerList;
+public class SimpleFourOperation {
+    public List<String> operatorsList;
+    private List<String> operatorExpressionList;
+    private List<String> userAnswerList;
+    private List<String> correctAnswerList;
 
     // 初始化；
     public void init() {
@@ -31,7 +31,8 @@ public class FourOperation {
         System.out.println(operationNum);
     }
 
-    public void generateAll(int operationNum, Scanner scanner) {
+    public int generateSimpleFourOpExp(int operationNum, Scanner scanner) {
+        int trueNum = 0;
         // 循环生成题目，用户做一题生一题
         for (int i = 0; i < operationNum; i++) {
             generateFormula();
@@ -39,11 +40,13 @@ public class FourOperation {
             userAnswerList.add(userAnswer);
             if (userAnswer.equals(correctAnswerList.get(i))) {
                 System.out.println("计算正确！正确答案为： " + correctAnswerList.get(i));
+                trueNum++;
             } else {
                 System.out.println("计算错误！正确答案为： " + correctAnswerList.get(i) +
-                        "你的答案为：" + userAnswer);
+                        ", 你的答案为：" + userAnswer);
             }
         }
+        return trueNum;
     }
 
     // 生成运算公式并存入List中
@@ -194,16 +197,5 @@ public class FourOperation {
         String operator = operatorsList.get(x);
         return operator;
     }
-
-
-    public static void main(String[] args) {
-        FourOperation fourOperation = new FourOperation();
-        fourOperation.init();
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("请输入生成四则运算题目的个数：");
-        int num = scanner.nextInt();
-        fourOperation.generateAll(num, scanner);
-    }
-
 
 }

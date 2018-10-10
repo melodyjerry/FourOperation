@@ -1,21 +1,97 @@
 package main;
 
-import main.Fraction;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 
 /**
  * @author
  * 分数四则运算
  */
-public class Calculator {
-    private List<Fraction> fractionsList = new ArrayList<>();
+public class FractionOperation {
+    private List<String> userAnswerList = new ArrayList<>();
+    private List<Fraction> correctAnswerList = new ArrayList<>();
+    private List<String> operatorExpressionList = new ArrayList<>();
     private int operationNum = 2;   //生成运算数的数量
     private int operatorNum = operationNum - 1;   // 生成运算符的数量
 
+
+    public int generateFractionOpExp(int operationNum, Scanner scanner) {
+        int trueNum = 0;
+        for (int i = 0; i < operationNum; i++) {
+            engine();
+            String userAnswer = scanner.next();
+            userAnswerList.add(userAnswer);
+
+            if (userAnswer.equals(pringFraction(correctAnswerList.get(i)))) {
+                System.out.println("计算正确！正确答案为： " + correctAnswerList.get(i));
+                trueNum++;
+            } else
+                System.out.println("计算错误！正确答案为： " + pringFraction(correctAnswerList.get(i)) +
+                        ", 你的答案为：" + userAnswer);
+        }
+        return trueNum;
+    }
+
+    @Test
+    public void engine() {
+        SimpleFourOperation fourOperation = new SimpleFourOperation();
+        fourOperation.init();
+
+        List<Fraction> newFractions;
+        List<String> newOperators;
+        Fraction newAnswer;
+        do {
+            List<String> operators = fourOperation.storeOpInList(operatorNum);
+            newOperators = fourOperation.deepCopy(operators);
+            List<Fraction> fractionsList = generateFractionList();
+            newFractions = fourOperation.deepCopy(fractionsList);
+            newAnswer = generateCorrectAnswer(operators, fractionsList);
+        } while (isLessThanZero(newAnswer));
+
+        printFractionExpression(newFractions, newOperators);
+        correctAnswerList.add(newAnswer);
+        System.out.println(pringFraction(newAnswer));
+    }
+
+    //判断分数是否为0
+    private boolean isLessThanZero(Fraction fraction) {
+        int numerator = fraction.getNumerator();
+        int denominator = fraction.getDenominator();
+        if (numerator < 0 && denominator > 0)
+            return true;
+        else if (numerator > 0 && denominator < 0)
+            return true;
+        else
+            return false;
+    }
+
+    //生成一组运算分数
+    private List<Fraction> generateFractionList() {
+        List<Fraction> fractionsList = new ArrayList<>();
+        for (int i = 0; i < operationNum; i++)
+            fractionsList.add(generateFraction());
+        return fractionsList;
+    }
+
+    //打印分数运算表达式
+    private void printFractionExpression(List<Fraction> fractionsList, List<String> operators) {
+        StringBuilder stringBuilder = new StringBuilder();
+        Fraction fraction;
+        for (int i = 0; i < operationNum - 1; i++) {
+            fraction = fractionsList.get(i);
+            stringBuilder.append(pringFraction(fraction));
+            stringBuilder.append(" " + operators.get(i) + " ");
+        }
+        fraction = fractionsList.get(operationNum - 1);
+        stringBuilder.append(pringFraction(fraction) + " = ");
+        System.out.println(stringBuilder.toString());
+
+        operatorExpressionList.add(stringBuilder.toString());
+    }
 
     // 计算运算式的正确结果
     public Fraction generateCorrectAnswer(List<String> operators, List<Fraction> operations) {
@@ -40,9 +116,9 @@ public class Calculator {
             Fraction fractionLeft = operations.remove(0);
             Fraction fractionRight = operations.remove(0);
             if (operator.equals("+"))
-                operations.add(fractionAdd(fractionLeft, fractionRight));
+                fractionLeft = fractionAdd(fractionLeft, fractionRight);
             else
-                operations.add(fractionSubtract(fractionLeft, fractionRight));
+                fractionLeft = fractionSubtract(fractionLeft, fractionRight);
             operations.add(0, fractionLeft);
         }
 
@@ -60,8 +136,8 @@ public class Calculator {
 
     // 真分数相除运算
     public Fraction fractionDivide(Fraction fractionLeft, Fraction fractionRight) {
-        int numerator = fractionLeft.getNumerator() / fractionRight.getDenominator();
-        int denominator = fractionLeft.getDenominator() / fractionRight.getNumerator();
+        int numerator = fractionLeft.getNumerator() * fractionRight.getDenominator();
+        int denominator = fractionLeft.getDenominator() * fractionRight.getNumerator();
 
         Fraction fraction = getGcdAndsimplificationFraction(numerator, denominator);
         return fraction;
@@ -111,26 +187,12 @@ public class Calculator {
         return new Fraction(numerator, denominator);
     }
 
-    public void printFractionExpression() {
-        FourOperation fourOperation = new FourOperation();
-        fourOperation.init();
-        List<String> operators = fourOperation.storeOpInList(operatorNum);
-        for (int i = 0; i < operationNum; i++) {
-            fractionsList.add(generateFraction());
-        }
 
-        StringBuilder stringBuilder = new StringBuilder();
-        Fraction fraction;
-        for (int i = 0; i < operationNum - 1;i++) {
-            fraction = fractionsList.get(i);
-            stringBuilder.append(fraction.getNumerator() + "/" + fraction.getDenominator());
-            stringBuilder.append(" " + operators.get(i) + "");
-        }
-        fraction = fractionsList.get(operationNum-1);
-        stringBuilder.append(fraction.getNumerator() + "/" + fraction.getDenominator() + " = ");
-        System.out.println(stringBuilder.toString());
+    public String pringFraction(Fraction fraction) {
+        String fractionString = String.valueOf(fraction.getNumerator()) + "/"
+                + String.valueOf(fraction.getDenominator());
+        return fractionString;
     }
-
 
     //生成一个真分数
     private Fraction generateFraction() {
@@ -146,7 +208,7 @@ public class Calculator {
     }
 
     //递归生成与分子不相等的分母
-    public int regenerate(int numerator, int denominator) {
+    private int regenerate(int numerator, int denominator) {
         if (numerator == denominator) {
             denominator = generateNum();
             return regenerate(numerator, denominator);
@@ -162,7 +224,7 @@ public class Calculator {
     }
 
     // 求a和b的最大公约数
-    public int greatestCommonDivisor(int a, int b) {
+    private int greatestCommonDivisor(int a, int b) {
         if (a < b) {
             int c = a;
             a = b;
@@ -177,8 +239,4 @@ public class Calculator {
         return b;
     }
 
-    // 求a和b的最小公倍数
-    public int leastCommonMultiple(int a, int b){
-        return a * b / greatestCommonDivisor(a, b);
-    }
 }
