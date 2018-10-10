@@ -8,8 +8,9 @@ import java.util.Scanner;
 
 
 /**
- * @author
- * 分数四则运算
+ *  @author: 梁铭标
+ *  @Date：2018.10.10
+ *  @Content：简单真分数运算类
  */
 public class FractionOperation {
     private List<String> userAnswerList = new ArrayList<>();
@@ -27,7 +28,7 @@ public class FractionOperation {
             userAnswerList.add(userAnswer);
 
             if (userAnswer.equals(pringFraction(correctAnswerList.get(i)))) {
-                System.out.println("计算正确！正确答案为： " + correctAnswerList.get(i));
+                System.out.println("计算正确！正确答案为： " + pringFraction(correctAnswerList.get(i)));
                 trueNum++;
             } else
                 System.out.println("计算错误！正确答案为： " + pringFraction(correctAnswerList.get(i)) +
@@ -54,7 +55,7 @@ public class FractionOperation {
 
         printFractionExpression(newFractions, newOperators);
         correctAnswerList.add(newAnswer);
-        System.out.println(pringFraction(newAnswer));
+//        System.out.println(pringFraction(newAnswer));
     }
 
     //判断分数是否为0
@@ -122,6 +123,7 @@ public class FractionOperation {
             operations.add(0, fractionLeft);
         }
 
+        //返回计算结果
         return operations.get(0);
     }
 

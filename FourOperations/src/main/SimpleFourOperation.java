@@ -7,7 +7,9 @@ import java.io.*;
 import java.util.*;
 
 /**
- *
+ *  @author: 梁铭标
+ *  @Date：2018.10.10
+ *  @Content：简单正整数运算类
  */
 public class SimpleFourOperation {
     public List<String> operatorsList;
@@ -49,7 +51,7 @@ public class SimpleFourOperation {
         return trueNum;
     }
 
-    // 生成运算公式并存入List中
+    // 生成运算公式并计算正确结果，将最终的存入List中
     public void generateFormula() {
         Random random = new Random();
         int operationNum = random.nextInt(3) + 3;   //运算数的个数
@@ -105,7 +107,7 @@ public class SimpleFourOperation {
             operations.add(0, operateLeft);
         }
 
-        System.out.println(operations.get(0));
+//        System.out.println(operations.get(0));
         return operations.get(0);
     }
 

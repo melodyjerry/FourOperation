@@ -2,6 +2,11 @@ package main;
 
 import java.io.Serializable;
 
+/**
+ * @author: 梁铭标
+ * @Date：2018.10.10
+ * @Content：可序列化真分数对象
+ */
 public class Fraction implements Serializable {
     private static final long serialVersionUID = -3245478690496182643L;
     private int numerator;  //分子
