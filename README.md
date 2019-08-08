@@ -22,7 +22,7 @@
 三.软件演示
 软件入口地址：http://119.23.205.157:8888/SimpleFourOperationWeb_war/Title.html  
 1.首先进行选择题目类型以及题目个数  
-![选择题目类型以及题目个数](https://github.com/mingbiaoleung/FourOperation/tree/FourOperationWeb/SimpleFourOperationWeb/src/main/webapp/images/1.png)
+![选择题目类型以及题目个数](https://github.com/mingbiaoleung/FourOperation/blob/FourOperationWeb/SimpleFourOperationWeb/src/main/webapp/images/1.png)
 
 ![选择题目类型以及题目个数](https://github.com/mingbiaoleung/FourOperation/tree/FourOperationWeb/SimpleFourOperationWeb/src/main/webapp/images/2.png)
 
