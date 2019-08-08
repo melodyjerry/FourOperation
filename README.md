@@ -32,4 +32,4 @@
 ![点击做题等待跳转到做题页面](https://github.com/mingbiaoleung/FourOperation/blob/FourOperationWeb/SimpleFourOperationWeb/src/main/webapp/images/4.png)
 
 3.计算题目后点击提交
-![计算题目后点击提交](https://github.com/mingbiaoleung/FourOperation/blob/FourOperationWeb/SimpleFourOperationWeb/src/main/webapp/images/6.png)
+![计算题目后点击提交](https://github.com/mingbiaoleung/FourOperation/blob/FourOperationWeb/SimpleFourOperationWeb/src/main/webapp/images/5.png)
