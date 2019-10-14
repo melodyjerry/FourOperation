@@ -33,3 +33,6 @@
 
 3.计算题目后点击提交
 ![计算题目后点击提交](https://github.com/mingbiaoleung/FourOperation/blob/FourOperationWeb/SimpleFourOperationWeb/src/main/webapp/images/5.png)
+
+# License
+MIT Copyright (c) 2019 梁铭标
